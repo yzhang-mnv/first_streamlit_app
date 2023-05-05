@@ -39,7 +39,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 # section to add new fruit
 add_my_fruit = streamlit.text_input('What fruit would you like to add?', 'jackfruit')
-streamlit.write ('The user enterred',fruit_add)
+streamlit.write ('The user enterred',add_my_fruit)
 
 # snowflake part
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
